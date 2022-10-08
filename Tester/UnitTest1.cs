@@ -10,7 +10,8 @@ namespace Tester
         {
             Car car = new Car();
 
-            Assert.AreEqual("car", car.VehicleType);
+         //Assert
+         Assert.AreEqual(bil,c.VehicleType)
         }
     }
 }
