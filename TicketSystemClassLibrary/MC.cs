@@ -8,9 +8,8 @@ namespace TicketSystemClassLibrary
 {
     public class MC:Vehicle
     {
-        public string Licenseplate { get; set; }
-        public DateTime Date { get; set; }
-
+       
+        
         public override double Price()
         { return 125; }
 

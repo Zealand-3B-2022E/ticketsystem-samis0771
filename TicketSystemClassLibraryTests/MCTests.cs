@@ -24,5 +24,14 @@ namespace TicketSystemClassLibrary.Tests
         {
             Assert.AreEqual(mc.VehicleType,mc.VehicleType);
         }
+
+        [TestMethod()]
+        
+        public void LicenseTest()
+        {
+            mc.Licenseplate = "AS12345";
+            Assert.ThrowsException<ArgumentException>(() => mc.Licenseplate = mc.Licenseplate);           
+        }
+
     }
 }
