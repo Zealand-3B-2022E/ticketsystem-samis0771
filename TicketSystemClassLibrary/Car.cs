@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace TicketSystemClassLibrary
 {
-    public class Car
+    public class Car:Vehicle
     {
         public string Licenseplate{ get; set; }
         public DateTime Date{ get; set; }
 
-        public double Price()
+        public override double Price()
         { return 240; }
 
-        public string VehicleType()
+        public override string VehicleType()
         { return "Car";  }
     }
 }

@@ -12,6 +12,7 @@ namespace TicketSystemClassLibrary.Tests
     public class MCTests
     {
         MC mc = new MC();
+
         [TestMethod()]
         public void PriceTest()
         {
