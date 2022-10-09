@@ -6,12 +6,17 @@ namespace Tester
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod()
         {
-            Car car = new Car();
-
+         //Arrange
+         Car c = new Car(); 
+         string bil = "Car";
+         //Act
+        
+         
          //Assert
          Assert.AreEqual(bil,c.VehicleType)
         }
+
     }
 }
