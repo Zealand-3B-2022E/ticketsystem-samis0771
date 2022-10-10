@@ -11,8 +11,14 @@ namespace TicketSystemClassLibrary.Tests
     [TestClass()]
     public class MCTests
     {
+        /// <summary>
+        /// Creates a new obj of MC class
+        /// </summary>
         MC mc = new MC();
 
+        /// <summary>
+        /// Tests if the method returns double 125
+        /// </summary>
         [TestMethod()]
         public void PriceTest()
         {
@@ -21,6 +27,9 @@ namespace TicketSystemClassLibrary.Tests
             Assert.AreEqual(ExpectedPrice, ActuelPrice);
         }
 
+        /// <summary>
+        /// Tests if the method returns string "MC"
+        /// </summary>
         [TestMethod()]
         
         public void VehicleTest()
@@ -30,6 +39,9 @@ namespace TicketSystemClassLibrary.Tests
             Assert.AreEqual(ExpectedVehicle,ActuelVehicle);
         }
 
+        /// <summary>
+        /// Tests if the property returns an ArgumentException if licenseplate exceeds 7 char
+        /// </summary>
         [TestMethod()]
         [ExpectedException(typeof(ArgumentException))]
         
@@ -39,6 +51,9 @@ namespace TicketSystemClassLibrary.Tests
             Assert.ThrowsException<ArgumentException>(() => mc.Licenseplate);
         }
 
+        /// <summary>
+        /// Tests if the price is reduced with 5% if the bool Brobizz is true
+        /// </summary>
         [TestMethod()]
         public void PriceTestDiscountActive()
         {
@@ -48,6 +63,9 @@ namespace TicketSystemClassLibrary.Tests
             Assert.AreEqual(ExpectedPrice, ActuelPrice);
         }
 
+        /// <summary>
+        /// Tests if the price is NOT reduced with 5% if the bool Brobizz is false
+        /// </summary>
         [TestMethod()]
         public void PriceTestDiscountNotActive()
         {
