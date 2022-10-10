@@ -10,7 +10,14 @@ namespace TicketSystemClassLibrary
     public class Car : Vehicle
     {
         public override double Price()
-        { return 240; }
+        {
+            if (Brobizz == true)
+                return 240 - (240 * 0.05);
+
+            else
+
+                return 240;
+        }
 
         public override string VehicleType()
         { return "Car";  }

@@ -15,14 +15,45 @@ namespace TicketSystemClassLibrary.Tests
 
         [TestMethod()]
         public void VehicleTypeTest()
-        {           
-            Assert.AreEqual(c.VehicleType, c.VehicleType);
+        {
+            double ExpectedPrice = 240;
+            double ActuelPrice = c.Price();
+            Assert.AreEqual(ExpectedPrice, ActuelPrice);
         }
 
         [TestMethod()]
         public void PriceTest()
         {
-            Assert.AreEqual(c.Price, c.Price);
+            string ExpectedVehicle = "Car";
+            string ActuelVehicle = c.VehicleType();
+            Assert.AreEqual(ExpectedVehicle, ActuelVehicle);
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+
+        public void LicenseTest()
+        {
+            c.Licenseplate = "AB345678";
+            Assert.ThrowsException<ArgumentException>(() => c.Licenseplate);
+        }
+
+        [TestMethod()]
+        public void PriceTestDiscountActive()
+        {
+            double ExpectedPrice = 228;
+            bool Brobizz = c.Brobizz = true;
+            double ActuelPrice = c.Price();
+            Assert.AreEqual(ExpectedPrice, ActuelPrice);
+        }
+
+        [TestMethod()]
+        public void PriceTestDiscountNotActive()
+        {
+            double ExpectedPrice = 240;
+            bool Brobizz = c.Brobizz = false;
+            double ActuelPrice = c.Price();
+            Assert.AreEqual(ExpectedPrice, ActuelPrice);
         }
     }
 }

@@ -39,5 +39,22 @@ namespace TicketSystemClassLibrary.Tests
             Assert.ThrowsException<ArgumentException>(() => mc.Licenseplate);
         }
 
+        [TestMethod()]
+        public void PriceTestDiscountActive()
+        {
+            double ExpectedPrice = 118.75;
+            bool Brobizz = mc.Brobizz =true;
+            double ActuelPrice = mc.Price();
+            Assert.AreEqual(ExpectedPrice, ActuelPrice);
+        }
+
+        [TestMethod()]
+        public void PriceTestDiscountNotActive()
+        {
+            double ExpectedPrice = 125;
+            bool Brobizz = mc.Brobizz = false;
+            double ActuelPrice = mc.Price();
+            Assert.AreEqual(ExpectedPrice, ActuelPrice);
+        }
     }
 }

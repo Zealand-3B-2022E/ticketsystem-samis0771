@@ -12,6 +12,8 @@ namespace TicketSystemClassLibrary
 
         private DateTime _datetime;
 
+        private bool _brobizz;
+
         public string Licenseplate
         {
             get => _licenseplate;
@@ -31,11 +33,18 @@ namespace TicketSystemClassLibrary
             set => _datetime = value;
         }
 
+        public bool Brobizz
+        {
+            get => _brobizz;
+            set => _brobizz = value;
+        }
+
         public abstract double Price();
 
 
         public abstract string VehicleType();
 
-       
+
+               
     }
 }
