@@ -19,7 +19,7 @@ namespace TicketSystemClassLibrary
             {
                 if (value== null || value.Length>7)
                 {
-                    throw new ArgumentException($"Licenseplate should be 7 or less char long but is {value}");
+                    throw new ArgumentException($"Licenseplate should be 7 or less char long");
                 }
                 _licenseplate = value;
             }
@@ -35,5 +35,7 @@ namespace TicketSystemClassLibrary
 
 
         public abstract string VehicleType();
+
+       
     }
 }
