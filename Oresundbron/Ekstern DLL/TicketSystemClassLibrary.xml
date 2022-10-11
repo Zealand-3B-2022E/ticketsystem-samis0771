@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketSystemClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TicketSystemClassLibrary.Car">
+            <summary>
+            Car class inheritance from Vehicle class
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.Price">
+            <summary>
+            Price method from Vehicle class that is overriden to return 240
+            It also checks if brobizz is true 
+            </summary>
+            <returns>240 or 228</returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.VehicleType">
+            <summary>
+            VehicleType method from Vehicle class that is overidden to return "Car"
+            </summary>
+            <returns>"Car"</returns>
+        </member>
+        <member name="T:TicketSystemClassLibrary.MC">
+            <summary>
+            MC class inheritance from Vehicle class
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.Price">
+            <summary>
+            Price method from Vehicle class that is overriden to return 125
+            It also checks if brobizz is true 
+            </summary>
+            <returns>125 or 118.75</returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.VehicleType">
+            <summary>
+            VehicleType method from Vehicle class that is overidden to return "MC"
+            </summary>
+            <returns>"MC"</returns>
+        </member>
+        <member name="T:TicketSystemClassLibrary.Vehicle">
+            <summary>
+            Base class for Car class and MC class 
+            </summary>
+        </member>
+        <member name="F:TicketSystemClassLibrary.Vehicle._licenseplate">
+            <summary>
+            Instance fields
+            </summary>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.Licenseplate">
+            <summary>
+            property Licenseplate that throws exception if string is over 7 char or is null
+            </summary>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.Date">
+             <summary>
+            Property of Date 
+             </summary>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.Brobizz">
+            <summary>
+            Property of Brobizz
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.Price">
+            <summary>
+            Price method that is abstract
+            </summary>
+            <returns>125 or 240</returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.VehicleType">
+            <summary>
+            VehicleType method  that is abstract
+            </summary>
+            <returns>"Car" or "MC"</returns>
+        </member>
+    </members>
+</doc>

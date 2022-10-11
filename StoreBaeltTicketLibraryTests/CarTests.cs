@@ -11,6 +11,8 @@ namespace StoreBaeltTicketLibrary.Tests
     [TestClass()]
     public class CarTests
     {
+
+        
         /// <summary>
         /// New obj of Car class from StorBaeltTicketLibrary solution
         /// </summary>
@@ -22,7 +24,7 @@ namespace StoreBaeltTicketLibrary.Tests
         [TestMethod()]
         public void PriceTest()
         {
-            double ExpectedPrice = 182.4;
+            double ExpectedPrice = 182.39999999999998;
             car.Date=new DateTime(2022,10,9);
             bool Brobizz = car.Brobizz = true;
             double ActuelPrice = car.Price();
