@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystemClassLibraryTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{09A4D896-03E5-49BF-8419-D8B415CD23FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{8331B1FD-666C-401D-81C2-FF6C2BC47963}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{09A4D896-03E5-49BF-8419-D8B415CD23FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09A4D896-03E5-49BF-8419-D8B415CD23FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09A4D896-03E5-49BF-8419-D8B415CD23FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8331B1FD-666C-401D-81C2-FF6C2BC47963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8331B1FD-666C-401D-81C2-FF6C2BC47963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8331B1FD-666C-401D-81C2-FF6C2BC47963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8331B1FD-666C-401D-81C2-FF6C2BC47963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
